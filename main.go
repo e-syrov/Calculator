@@ -14,12 +14,12 @@ func main() {
 	str := strings.Split(scan(), " ")
 	switch {
 
-	case cap(str) < 3:
+	case len(str) < 3:
 		{
 			fmt.Println("Строка не является математической операцией")
 			return
 		}
-	case cap(str) > 3:
+	case len(str) > 3:
 		{
 			fmt.Println("Формат математической операции не удовлетворяет заданию — два операнда и один оператор")
 			return
